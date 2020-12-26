@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/feedback">
+    android:background="@color/colorPrimary">
 
 
     <TextView
@@ -15,7 +15,7 @@
         android:textAllCaps="true"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
-        android:textColor="#000000"/>
+        android:textColor="#ffffff"/>
 
     <EditText
         android:id="@+id/editTextMessage"
@@ -35,7 +35,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:text="Send"
-        android:background="#D764DDC6"
+        android:background="@color/colorSecondary"
         android:elevation="8dp"
-        android:textColor="#000000"/>
+        android:textColor="#ffffff"/>
 </LinearLayout>

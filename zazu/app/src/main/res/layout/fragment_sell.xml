@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/Product_tag"
             android:layout_marginStart="65dp"
-            android:hint="Enter Product name"
+            android:hint="Enter pet name"
             android:maxLength="55"
             android:maxLines="1"
             android:singleLine="true" />
@@ -54,7 +54,7 @@
             android:layout_below="@+id/edit_text_file_name"
             android:layout_marginLeft="65dp"
             android:layout_marginTop="5dp"
-            android:text="select an image "
+            android:text="Select an image "
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="2dp"
             android:layout_toEndOf="@id/rupee_button"
-            android:text="product price "
+            android:text="Asking price (optional)"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -113,7 +113,7 @@
             android:layout_below="@+id/edit_text_file_price"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:text="Description (optional) "
+            android:text="Description "
             android:textSize="25dp"
             android:textStyle="bold" />
 

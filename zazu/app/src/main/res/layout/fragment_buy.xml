@@ -39,7 +39,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Product Name"
+                android:text="Pet Name"
                 android:textSize="20dp" />
 
             <View
@@ -80,7 +80,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif-black"
                 android:fontStyle="italic"
-                android:text="Seller Name | "
+                android:text="Person of Contact"
 
                 android:textSize="15dp" />
 

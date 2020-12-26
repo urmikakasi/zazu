@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_app_icon_round"
-        android:label="Juggler"
-        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:icon="@drawable/app_logo"
+        android:label="Zazu"
+        android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 

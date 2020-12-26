@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@color/colorPrimary">
 
         <TextView
             android:id="@+id/purpose"
@@ -20,7 +21,8 @@
             android:paddingLeft="5dp"
             android:text="Purpose"
             android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+           />
 
         <TextView
             android:id="@+id/purpose_text"
@@ -28,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/purpose"
             android:text="@string/intro"
+            android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="normal" />
 
@@ -44,21 +47,24 @@
 
 
         <TextView
-            android:id="@+id/akshat_text"
+            android:id="@+id/urmika_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/team"
-            android:layout_marginTop="10dp"
-            android:text="@string/k"
-            android:textSize="20dp" />
+            android:layout_marginTop="33dp"
+            android:text="@string/U"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
 
-        <ImageView
-            android:id="@+id/akshat_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+        <TextView
+            android:id="@+id/rithika_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/team"
-            android:layout_marginStart="45dp"
-            android:layout_toEndOf="@+id/akshat_text"
-            android:background="@drawable/p2" />
+            android:layout_marginTop="135dp"
+            android:text="@string/R"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+
     </RelativeLayout>
 </ScrollView>

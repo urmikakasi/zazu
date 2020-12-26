@@ -7,4 +7,5 @@
     <color name="blackish_blue">#165F81</color>
     <color name="light_blue">#F5EFEF</color>
     <color name="red">#C1FF0000</color>
+    <color name="colorSecondary">#e84a5f</color>
 </resources>
