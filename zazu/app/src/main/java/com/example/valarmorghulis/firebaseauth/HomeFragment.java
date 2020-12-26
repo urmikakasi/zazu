@@ -12,15 +12,17 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
-
 import java.util.ArrayList;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import java.util.List;
 
 
@@ -83,6 +85,29 @@ public class HomeFragment extends Fragment {
                 mProgressCircle.setVisibility(View.INVISIBLE);
             }
         });
+
+
+
+
         return v;
     }
+    private void firebaseSearch(String searchText){
+        Query firebaseSearchQuery= mDatabaseRef.orderByChild("name").startAt(searchText).endAt(searchText+"\uf8ff");
+        FirebaseRecyclerOptions<Model> options= new FirebaseRecyclerOptions.Builder<Model>().setQuery(firebaseSearchQuery,Model.class).build();
+
+        FirebaseRecyclerAdapter<Model, ViewHolder> firebaseRecyclerAdapter= new FirebaseRecyclerAdapter<Model, ViewHolder>(options) {
+            @Override
+            protected void onBindViewHolder(@androidx.annotation.NonNull ViewHolder holder, int position, @androidx.annotation.NonNull Model model) {
+
+            }
+
+            @androidx.annotation.NonNull
+            @Override
+            public ViewHolder onCreateViewHolder(@androidx.annotation.NonNull ViewGroup parent, int viewType) {
+                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.row,parent,false);
+                return new ViewHolder(view);
+            }
+        };
+    }
+
 }
